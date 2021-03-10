@@ -1,0 +1,28 @@
+{
+  "name": "simple-client",
+  "version": "1.0.0",
+  "description": "a simple http client",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:zhangky01/simple-client.git"
+  },
+  "homepage": "https://github.com/zhangky01/simple-client",
+  "keywords": [
+    "http",
+    "https",
+    "simple",
+    "client"
+  ],
+  "author": "KaiYang Zhang",
+  "license": "MIT",
+  "files": [
+    "LICENSE",
+    "Readme.md",
+    "index.js",
+    "lib/"
+  ]
+}
