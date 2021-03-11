@@ -1,7 +1,7 @@
-const http = require('./lib/http');
+const client = require('./lib/client');
 const util = require('util');
 const utils = require('./lib/utils');
-const request = util.promisify(http.request);
+const request = util.promisify(client.request);
 
 module.exports = new SimpleClient();
 
