@@ -6,6 +6,12 @@ httpClient.get('https://www.baidu.com/').then(data => {
     console.log(error);
 });
 
+httpClient.get('http://localhost:8080/health', { data: {name: 'zhangsan', age: 18} }).then(data => {
+    console.log(data);
+}).catch(error => {
+    console.log(error);
+});
+
 /* const data = {
     name: 'zhangsan',
     age: 18
