@@ -13,7 +13,7 @@ $ npm install simple-client
 ## 快速开始
 ```js
 const simpleClient = require('simple-client');
-httpClient.get('https://www.baidu.com/').then(data => {
+simpleClient.get('https://www.baidu.com/').then(data => {
     // data => { statusCode, statusMessage, data }
     console.log(data);
 }).catch(error => {
