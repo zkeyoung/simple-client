@@ -35,6 +35,8 @@ simpleClient.get('https://www.baidu.com/').then(data => {
  * @param {string} option.encoding 响应data编码默认utf8
  * @param {boolean} option.keepAlive
  * @param {number} option.keepAliveTimeout 
+ * @param {object} option.query url参数
+ * @param {object} option.body 请求体参数
  * @param {boolean} option.logOn 开启日志
  * @param {function} option.log log输出函数
  * /

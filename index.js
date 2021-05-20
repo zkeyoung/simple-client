@@ -11,12 +11,15 @@ function SimpleClient() {}
     /**
      * @param {string} url 请求地址
      * @param {object} option
+     * @param {object} option.query url参数
      * @param {object} option.data 请求数据体
      * @param {number} option.timeout
      * @param {string} option.encoding 默认utf8 响应数据data
      * @param {object} option.headers
      * @param {boolean} option.keepAlive
      * @param {number} option.keepAliveTimeout
+     * @param {object} log
+     * @param {boolean} logOn 开启日志
      * @return {Promise} { statusCode: number, statusMessage: string, data: object | stirng }
      */
     SimpleClient.prototype[method] = function (url, option) {
