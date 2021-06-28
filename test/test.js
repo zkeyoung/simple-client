@@ -1,13 +1,13 @@
 const httpClient = require('../index');
 global.FULL_LOG=true;
 global.LOG = {info: msg => console.log(msg)};
-httpClient.get('https://www.baidu.com/').then(data => {
+/* httpClient.get('https://www.baidu.com/').then(data => {
     console.log(data);
 }).catch(error => {
     console.log(error);
-});
+}); */
 
-httpClient.get('http://localhost:8080/health', { body: {name: 'zhangsan', age: 18}, query: { app: 'simple-client' } }).then(data => {
+httpClient.get('http://localhost:80/health', { raw: true, body: {name: 'zhangsan', age: 18}, query: { app: 'simple-client' } }).then(data => {
     console.log(data);
 }).catch(error => {
     console.log(error);

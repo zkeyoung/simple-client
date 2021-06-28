@@ -39,6 +39,7 @@ simpleClient.get('https://www.baidu.com/').then(data => {
  * @param {object} option.body 请求体参数
  * @param {boolean} option.logOn 开启日志
  * @param {function} option.log log输出函数
+ * @param {boolean} option.raw 获取原始数据
  * /
 ```
 
